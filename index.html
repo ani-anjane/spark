@@ -60,10 +60,16 @@
     .moving-text:hover {
         animation-play-state: paused;
     }
+    @media only screen and (max-device-width: 480px){
+        .moving-text {
+        animation: marquee 20s linear infinite;
+    }
+    }
 
     .moving-text {
         animation: marquee 40s linear infinite;
     }
+    
 </style>
 
 <body>
