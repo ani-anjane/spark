@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.42.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;700;900&display=swap" rel="stylesheet">
 
@@ -61,18 +62,21 @@
         animation-play-state: paused;
     }
     @media only screen and (max-device-width: 480px){
+
+
+
         .moving-text {
-        animation: marquee 20s linear infinite;
+        animation: marquee 40s linear infinite;
     }
     }
 
     .moving-text {
-        animation: marquee 40s linear infinite;
+        animation: marquee 20s linear infinite;
     }
     
 </style>
 
-<body>
+<body class="mx-auto">
     <nav class="p-2">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
@@ -90,7 +94,7 @@
                         <li><a href="#about">About</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost normal-case text-xl font-bold text-green-500">Spark</a>
+                <a class="btn btn-ghost normal-case text-xl font-bold text-green-500"><img src="./logo.png" alt="" class="w-12 mr-3"> Spark </a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal p-0">
@@ -122,7 +126,7 @@
 
     <section id="clients"
         class="clients bg-accent flex flex-col items-center justify-center align-center overflow-x-clip">
-        <p class="text-3xl font-bold mt-8 text-white mb-8">We have worked with</p>
+        <p class="text-3xl font-bold mt-8 text-white mb-8">Our founders have worked with</p>
 
         <div class="flex p-4 align-center justify-evenly moving-text mb-8">
             <img src="./NYU-Symbol.png" alt="" class="bg-white p-4 m-2 rounded-md">
@@ -140,44 +144,44 @@
         <p class="text-3xl font-bold mt-8 text-primary mb-8">Services we offer includes...</p>
 
         <div class="flex flex-wrap">
-            <div class="card w-96 bg-base-100 shadow-lg m-12 h">
+            <div class="card w-96 bg-base-100 shadow-md m-12 h">
                 <figure><img class="p-4" src="./dataextraction.svg" alt="Data Extraction" /></figure>
                 <div class="card-body">
                     <h2 class="card-title">
                         Data Extraction
                     </h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <p>Data extraction is the act or process of retrieving data out of data sources for further data processing or data storage. The import into the intermediate extracting system is thus usually followed by data transformation and possibly the addition of metadata prior to export to another stage in the data workflow.</p>
                     <div class="card-actions justify-end">
 
                     </div>
                 </div>
             </div>
-            <div class="card w-96 bg-base-100 shadow-lg m-12 h">
+            <div class="card w-96 bg-base-100 shadow-md m-12 h">
                 <figure><img class="p-4" src="./data_collection.svg" alt="Data Extraction" /></figure>
                 <div class="card-body">
                     <h2 class="card-title">
                         Data Transforming
                     </h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <p>In computing, data transformation is the process of converting data from one format or structure into another format or structure. It is a fundamental aspect of most data integration and data management tasks such as data wrangling, data warehousing, data integration and application integration.</p>
                     <div class="card-actions justify-end">
 
                     </div>
                 </div>
             </div>
-            <div class="card w-96 bg-base-100 shadow-lg m-12 h">
+            <div class="card w-96 bg-base-100 shadow-md m-12 h">
                 <figure><img class="p-4" src="./datatransform.svg" alt="Data Extraction" /></figure>
                 <div class="card-body">
                     <h2 class="card-title">
                         Data Loading
                     </h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <p>The load phase loads the data into the end target, which can be any data store including a simple delimited flat file or a data warehouse.Depending on the requirements of the organization, this process varies widely. Some data warehouses may overwrite existing information with cumulative information; updating extracted data is frequently done on a daily, weekly, or monthly basis.</p>
                     <div class="card-actions justify-end">
 
                     </div>
                 </div>
             </div>
         </div>
-        <p class="text-2xl font-bold text-center mt-8 text-neutral mb-14">With the help of ETL
+        <p class="text-2xl font-bold text-left px-6 mt-8 text-neutral mb-14 md:text-center">With the help of ETL
             Data Integration
             get an unified view of all your data from different sources in a single place</p>
 
@@ -193,7 +197,7 @@
                 </div>
             </div>
         </div>
-        <p class="text-2xl font-bold text-center mt-8 text-accent mb-14">Our TechStack Uses the best technolgy available
+        <p class="text-2xl font-bold text-left px-6 mt-8 text-accent mb-14 md:text-center">Our TechStack Uses the best technolgy available
             out there in the market to serve your needs.</p>
         <div class="bg-accent rounded-xl m-4 shadow-lg">
             <picture>
@@ -204,10 +208,10 @@
         </div>
     </section>
 
-    <section id="about" class="flex flex-wrap items-center justify-center align-center my-16 min-h-max md:mx-28">
+    <section id="about" class="flex flex-wrap items-center justify-center align-center my-16 min-h-max md:mx-28 px-9">
 
-        <div class="card lg:card-side bg-base-100 shadow-xl">
-            <figure><img src="https://placeimg.com/400/400/arch" alt="Album" class="rounded-lg"/></figure>
+        <div class="card lg:card-side bg-base-100 shadow-sm">
+            <figure><img src="./logo.png" alt="Album" class="rounded-lg w-400 shadow-xl"/></figure>
             <div class="card-body ">
                 <h2 class="card-title">About Spark</h2>
                 <p>Info about the company.............................</p>
